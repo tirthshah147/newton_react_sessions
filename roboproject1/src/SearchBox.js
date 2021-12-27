@@ -7,10 +7,16 @@ export default function SearchBox({onInputChange}) {
                 type='text' 
                 placeholder="Search Robots" 
                 className="pa3 ba b--green bg-lightest-blue"
-                onChange={(event) => onInputChange(event)}/>
+                onChange={(event) => onInputChange(event.target.value)}/>
         </div>
     )
 }
+
+
+
+// function(event){
+//     onInputChange(event);
+// }
 
 
 // () => {
@@ -18,4 +24,6 @@ export default function SearchBox({onInputChange}) {
 // }()
 
 // (event) => onInputChange(event)
+
+// onChange={(event) => onInputChange(event)}
 

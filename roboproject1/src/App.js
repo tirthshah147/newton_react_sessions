@@ -25,16 +25,23 @@ class App extends React.Component{
   }
   
 
-  onInputChange = (event) => {
-      this.setState({searchField : event.target.value})
+  onInputChange = async(val) => {
+      await this.setState({searchField : val})
+      console.log(this.state.searchField);
   }
 
+
   render(){
+    const filteredRobots = this.state.robots.filter((robot) => {
+        return robot.name.toLowerCase().includes(this.state.searchField.toLowerCase())
+    })
+     
     return (
       <div className="tc">
         <h1>RoboProject</h1>
-        <SearchBox onInputChange={this.onInputChange}/>
-        <CardList robots={this.state.robots}/>
+        <SearchBox onInputChange={this.onInputChange}/> 
+        
+        <CardList robots={filteredRobots}/>
       </div>
     );
   }

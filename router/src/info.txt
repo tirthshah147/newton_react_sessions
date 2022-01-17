@@ -1,0 +1,7 @@
+STEP 1. WRAP your very first component (major component)
+in the component tree in a {BrowserRouter} component
+
+STEP 2. define {Route} for our components, we can use this 
+{Route} to display info depending on the URL on the URL Bar
+
+STEP 3. Control the URL with the {NavLink, Link} components

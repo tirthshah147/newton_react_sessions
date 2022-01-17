@@ -1,0 +1,30 @@
+.course{
+    width: 25%;
+    margin: 1rem;
+    box-sizing: border-box;
+    border: 2px solid rgb(131, 129, 129);
+    padding-bottom: 4rem;
+    position: relative;
+}
+
+.course__img--container{
+    width: 100%;
+    background-color: black;
+}
+
+.course__img{
+    width: 100%;
+    opacity: 0.6;
+}
+
+.course__status{
+    position: absolute;
+    top:0;
+    right:0;
+    background-color: brown;
+    color:white;
+}
+
+.hot{
+    padding: 0.4rem 0.7rem;
+}

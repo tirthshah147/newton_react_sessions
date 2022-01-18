@@ -1,0 +1,11 @@
+.cardContainer{
+  width: 90%;
+  margin-left:5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.active{
+    background-color: aqua;
+}

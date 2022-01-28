@@ -1,0 +1,21 @@
+.card-container{
+    width: 400px;
+    height: 300px;
+    padding: 2rem;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.container--dark{
+    background-color: #1f1d1d;
+    color:white;
+    box-shadow: 1px 1px 5px white;
+}
+
+.container--light{
+    background-color: white;
+    color:black;
+    box-shadow: 1px 1px 5px grey;
+}
